@@ -1,1 +1,82 @@
-/* ESTILO GENERAL */
+/* GENERAL */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+/* MENU */
+.menu{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* LOGO */
+.logo h2{
+    color: black;
+}
+
+/* OPCIONES */
+.opciones a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.opciones a:hover{
+    color: gray;
+}
+
+/* PORTADA */
+.portada{
+    height: 90vh;
+
+    background-image: url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* OSCURECER FONDO */
+.contenido{
+    background-color: rgba(0,0,0,0.6);
+    padding: 50px;
+    text-align: center;
+    color: white;
+    width: 70%;
+}
+
+/* TITULO */
+.contenido h1{
+    font-size: 55px;
+}
+
+/* TEXTO */
+.contenido p{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+/* BOTON */
+button{
+    margin-top: 30px;
+    padding: 15px 35px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: gray;
+}
