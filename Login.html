@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <main class="Login"> 
+    <div class="Bienvenida">
+            <h1>Reclamos.ec</h1>
+            <p>Bienvenido al sistema de gestión de reclamos.
+            Aquí podrás registrar, consultar y dar seguimiento
+            a tus reclamos de manera rápida y segura.</p>
+    </div>
     
+        <section class="L1">
+            <form id="Formatologin">
+                <div class="Campo">
+                    <h2>Inicio de Sesión</h2>
+                    <label for="Correo">Correo Electrónico:</label>
+                    <input type="email" id="Correo" name="Correo" required>
+                </div>
+                <div class="Campo">
+                    <label for="Contraseña">Contraseña:</label>
+                    <input type="password" id="Contraseña" name="Contraseña" required>
+                </div>
+                <p class="Olvido">¿Olvidaste tu contraseña? <a href="#">Recuperar contraseña</a></p>
+                <button type="submit">Iniciar Sesión</button>
+                <p class="Registro">¿No tienes una cuenta? <a href="Registro.html">Regístrate aquí</a></p>
+                <div class="icono">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <p class="Volver"><a href="Index.html">Volver a la página principal</a></p>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
