@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclamos.ec - Gestión de Reclamos</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="StyleReclamos.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <div class="navbar">
+        <div class="logo">Reclamos.ec</div>
+        <div class="nav-links">
+            <a href="Index.html">Inicio</a>
+            <a href="Reclamos.html">Gestión de Reclamos</a>
+            <a href="Login.html">Iniciar Sesión</a>
+            <a href="Registro.html" class="btn-nav">Registrarse</a>
+        </div>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="contenido">
+
+        <!-- SECCIÓN 1: NUEVO RECLAMO -->
+        <div class="seccion">
+            <h2>Nuevo Reclamo</h2>
+            <p>Completa el formulario para registrar un nuevo reclamo.</p>
+
+            <div class="formulario">
+
+                <div class="campo">
+                    <label>Nombre del Cliente</label>
+                    <input type="text" id="nombre" placeholder="Ej: Juan Pérez">
+                    <p class="error" id="error-nombre"></p>
+                </div>
+
+                <div class="campo">
+                    <label>Categoría</label>
+                    <select id="categoria">
+                        <option value="">-- Selecciona una categoría --</option>
+                        <option value="Servicio">Servicio</option>
+                        <option value="Producto">Producto</option>
+                        <option value="Facturación">Facturación</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <p class="error" id="error-categoria"></p>
+                </div>
+
+                <div class="campo">
+                    <label>Asunto</label>
+                    <input type="text" id="asunto" placeholder="Ej: Cobro incorrecto en factura">
+                    <p class="error" id="error-asunto"></p>
+                </div>
+
+                <div class="campo">
+                    <label>Descripción</label>
+                    <textarea id="descripcion" placeholder="Describe el reclamo con más detalle..."></textarea>
+                    <p class="error" id="error-descripcion"></p>
+                </div>
+
+                <button onclick="validarFormulario()">Registrar Reclamo</button>
+
+            </div>
+        </div>
+
+        <!-- SECCIÓN 2: GESTIÓN DE RECLAMOS -->
+        <div class="seccion">
+            <h2>Gestión de Reclamos</h2>
+            <p>Consulta y administra los reclamos registrados.</p>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Asunto</th>
+                            <th>Estado</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Juan Pérez</td>
+                            <td>Facturación</td>
+                            <td>Cobro incorrecto</td>
+                            <td><span class="estado-badge rojo">Pendiente</span></td>
+                            <td>15/05/2025</td>
+                            <td>
+                                <button class="btn-accion ver">Ver</button>
+                                <button class="btn-accion editar">Editar</button>
+                                <button class="btn-accion eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>María López</td>
+                            <td>Servicio</td>
+                            <td>Atención deficiente</td>
+                            <td><span class="estado-badge amarillo">En Proceso</span></td>
+                            <td>16/05/2025</td>
+                            <td>
+                                <button class="btn-accion ver">Ver</button>
+                                <button class="btn-accion editar">Editar</button>
+                                <button class="btn-accion eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>Carlos Ruiz</td>
+                            <td>Producto</td>
+                            <td>Producto en mal estado</td>
+                            <td><span class="estado-badge verde">Resuelto</span></td>
+                            <td>17/05/2025</td>
+                            <td>
+                                <button class="btn-accion ver">Ver</button>
+                                <button class="btn-accion editar">Editar</button>
+                                <button class="btn-accion eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <div class="footer">
+        <p>© 2025 Reclamos.ec — Sistema de Gestión de Reclamos</p>
+    </div>
+
+    <script src="ValidacionReclamos.js"></script>
+
+</body>
+
+</html>

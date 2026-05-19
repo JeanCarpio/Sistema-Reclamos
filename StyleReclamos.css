@@ -1,0 +1,183 @@
+/* CONTENIDO PRINCIPAL */
+.contenido {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-bottom: 50px;
+}
+
+.seccion h2 {
+    font-size: 24px;
+    color: #111111;
+    margin-bottom: 6px;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 8px;
+}
+
+.seccion p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    background-color: #f7f7f7;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 28px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333333;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Georgia, serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.campo textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #888888;
+}
+
+.formulario button {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #444444;
+}
+
+.error {
+    color: #cc3333;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+
+/* TABLA */
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 12px 14px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:hover {
+    background-color: #f7f7f7;
+}
+
+tbody td {
+    padding: 11px 14px;
+    color: #333333;
+}
+
+
+/* BADGES DE ESTADO */
+
+.estado-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.estado-badge.amarillo {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.estado-badge.rojo {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.estado-badge.verde {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+
+/* BOTONES DE ACCIONES */
+
+.btn-accion {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.btn-accion.ver {
+    background-color: #e0e0e0;
+    color: #222222;
+}
+
+.btn-accion.editar {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.btn-accion.eliminar {
+    background-color: #cc3333;
+    color: #ffffff;
+}
+
+.btn-accion:hover {
+    opacity: 0.85;
+}
