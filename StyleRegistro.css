@@ -49,7 +49,7 @@ body {
     height: 30px;
     border-radius: 6px;
     font-size: 1rem;
-    background-color: rgb(23, 182, 203);
+    background-color: rgb(88, 88, 88);
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 
