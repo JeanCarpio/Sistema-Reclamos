@@ -1,3 +1,5 @@
+/* RECUPERAR CONTRASEÑA */
+
 *{
     margin: 0;
     padding: 0;
@@ -10,24 +12,24 @@ body{
     background: #f4f4f4;
 }
 
-/*PRINCIPAL*/
+/* PRINCIPAL */
 
-.Login{
+.Recuperar{
     min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 60px 20px;
 }
 
-.L1{
+.R1{
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-/* FORMULARIO*/
+/* FORMULARIO */
 
 form{
     width: 100%;
@@ -38,14 +40,16 @@ form{
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
+/* INPUT */
+
 .Campo{
     margin-bottom: 18px;
 }
 
 .Campo h2{
     text-align: center;
-    margin-bottom: 25px;
     color: #111;
+    margin-bottom: 25px;
     font-size: 32px;
 }
 
@@ -64,7 +68,7 @@ form{
     font-size: 15px;
 }
 
-/*ESTADOS*/
+/* ESTADOS */
 
 .Campo input:focus{
     border-color: #000;
@@ -75,13 +79,11 @@ button:hover{
     background-color: #333;
 }
 
-.Olvido a:hover,
-.Registro a:hover,
 .Volver a:hover{
     text-decoration: underline;
 }
 
-/*BOTON*/
+/* BOTON */
 
 button{
     width: 50%;
@@ -96,78 +98,16 @@ button{
     margin: 20px auto 5px auto;
 }
 
-/*SEPARADOR*/
-
-.separador{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 25px 0 20px 0;
-    color: #666;
-    font-size: 15px;
-}
-
-.separador::before,
-.separador::after{
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: #ccc;
-}
-
-.separador span{
-    padding: 0 15px;
-}
-
-/*MENSAJES Y LINKS*/
-
-.Olvido{
-    text-align: center;
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-.Olvido a,
-.Registro a,
-.Volver a{
-    color: #111;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.Registro{
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
-}
+/* LINKS */
 
 .Volver{
     text-align: center;
     margin-top: 15px;
 }
 
-/*ICONOS*/
-
-.icono{
-    margin: 20px 0; 
-    display: flex;
-    justify-content: center;
-    gap: 10px; 
-}
-
-.icon{
-    border: 1px solid #222;
-    border-radius: 20px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    margin: 0 4px;
-    color:#222;
-}
-
-.icon:hover{
-    background: #1f1f1f;
-    color: white;
+.Volver a{
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+    font-weight: bold;
 }
