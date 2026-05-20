@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="Style.Recuperar.css">
 </head>
 <body>
-    <main class="Recuperar">
+<main class="Recuperar">
         <section class="R1">
             <form id="Formatorecuperar">
                 <div class="Campo">
                     <h2>Recuperar Contraseña</h2>
                     <label for="Correo">Correo Electrónico:</label>
-                    <input type="email" id="Correo" name="Correo" required>
+                    <input type="text" id="Correo" name="Correo">
+                    <span class="error-message" id="CorreoError"></span>
                 </div>
                 <button type="submit">Enviar</button>
-
-                <p class="Volver"><a href="Login.html">Volver al inicio de sesión</a></p>
+                <p class="Volver">
+                <a href="Login.html">Volver al inicio de sesión</a></p>
             </form>
         </section>
     </main>
+    <script src="ValidacionRecuperar.js"></script>
 </body>
 </html>
