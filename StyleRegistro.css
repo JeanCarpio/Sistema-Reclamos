@@ -5,21 +5,27 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
     font-weight: bold;
-    color: #333;
+    color: #111;
     font-size: 20px;
-    height: auto;
+    min-height: 100vh;
+    display: flex;            
+    align-items: center;
     justify-content: center;
+
 }
 
 .formulario-registro {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 35px;
     border: 1px solid #ccc ;
     border-radius: 8px;
     text-align: center;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .form-group {
@@ -30,26 +36,31 @@ body {
 
 .form-group label {
     margin-bottom: 1em;
+    text-align: left;
     
 }
 
 .form-group input {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #0e0d0d;
     border-radius: 6px;
+    
 }
 
 .h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #111;
 }
 
 .form-registro input[type="submit"] {
     width: 100%;  
     height: 30px;
+    max-width: 220px;
+    color: white;
     border-radius: 6px;
     font-size: 1rem;
-    background-color: rgb(23, 182, 203);
+    background-color: #111;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 
@@ -61,6 +72,62 @@ body {
     display: flex;
     gap: 15px;
     justify-content: center;
-    font-weight: 100;
+    font-weight: normal;
+    
+}
+.login a {
+    color: #0a0a0a;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+
+.login p {
+    color: #0a0a0a;
+    font-size: 16px;
 }
     
+
+.txt-social {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: normal; 
+    color: #555;
+}
+
+.google-btn {
+    color: #000000;            /* Letra G negra */
+    background-color: #ffffff;
+}
+
+.facebook-btn {
+    color: #000000;            
+    background-color: #ffffff; 
+    
+}
+
+.social-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;               
+    margin-top: 5px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;               /* Ancho del círculo */
+    height: 55px;              /* Alto del círculo */
+    border-radius: 50%;        /* Transforma el cuadrado en un círculo perfecto */
+    border: 1px solid #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.social-btn:hover {
+    transform: scale(1.08);
+}
