@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="StyleLogin.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <main class="Login"> 
+    <!-- Contenedor principal -->
+    <main class="Login">
         <section class="L1">
             <form id="Formatologin">
                 <div class="Campo">
                     <h2>Inicio de Sesión</h2>
                     <label for="Correo">Correo Electrónico:</label>
-                    <input type="email" id="Correo" name="Correo" required>
+                    <input type="text" id="Correo" name="Correo">
+                    <span class="error-message" id="CorreoError"></span>
                 </div>
                 <div class="Campo">
                     <label for="Contraseña">Contraseña:</label>
-                    <input type="password" id="Contraseña" name="Contraseña" required>
+                    <input type="password" id="Contraseña" name="Contraseña">
+                    <span class="error-message" id="ContraseñaError"></span>
                 </div>
-                <p class="Olvido">¿Olvidaste tu contraseña? <a href="Recuperar.html">Recuperar contraseña</a></p>
+                <p class="Olvido">¿Olvidaste tu contraseña?<a href="Recuperar.html">Recuperar contraseña</a></p>
                 <button type="submit">Iniciar Sesión</button>
-                <p class="Registro">¿No tienes una cuenta? <a href="Registro.html">Regístrate aquí</a></p>
+                <p class="Registro">¿No tienes una cuenta?<a href="Registro.html"> Regístrate aquí </a></p>
                 <div class="separador">
-                  <span>O continuar con</span>
+                    <span>O continuar con</span>
                 </div>
                 <div class="icono">
-                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
                 </div>
-                <p class="Volver"><a href="Index.html">Volver a la página principal</a></p>
+                <p class="Volver">
+                    <a href="Index.html">Volver a la página principal</a>
+                </p>
             </form>
         </section>
     </main>
+    <script src="ValidacionLogin.js"></script>
 </body>
 </html>
