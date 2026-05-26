@@ -131,3 +131,10 @@ body {
 .social-btn:hover {
     transform: scale(1.08);
 }
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+}
