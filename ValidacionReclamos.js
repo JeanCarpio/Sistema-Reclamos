@@ -6,16 +6,14 @@ function validarFormulario() {
     var asunto = document.getElementById("asunto").value;
     var descripcion = document.getElementById("descripcion").value;
 
-    // Limpiar mensajes de error anteriores
     document.getElementById("error-nombre").textContent = "";
     document.getElementById("error-categoria").textContent = "";
     document.getElementById("error-asunto").textContent = "";
     document.getElementById("error-descripcion").textContent = "";
 
-    // Variable para saber si hay errores
     var hayError = false;
 
-    // Validar nombre
+    // Validar nombre 
     if (nombre === "") {
         document.getElementById("error-nombre").textContent = "El nombre es obligatorio.";
         hayError = true;
