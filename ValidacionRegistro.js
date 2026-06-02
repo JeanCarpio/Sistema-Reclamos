@@ -41,6 +41,20 @@ document.addEventListener('DOMContentLoaded', function() {
         else{
             document.getElementById('passwordError').textContent = "";
         }
+        // CONFIRMAR CONTRASEÑA
+        const confirmarContraseña = document.getElementById('confirmPassword').value.trim();
+
+        if(confirmarContraseña === ""){
+            document.getElementById('confirmPasswordError').textContent = "Confirme su contraseña.";
+            valid = false;
+        }
+        else if(confirmarContraseña !== contraseña){
+            document.getElementById('confirmPasswordError').textContent = "Las contraseñas no coinciden.";
+            valid = false;
+        }
+        else{
+            document.getElementById('confirmPasswordError').textContent = "";
+        }
 
         //CORREO
         const correo = document.getElementById('email').value.trim();
@@ -60,9 +74,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // EVITAR ENVÍO
+    const successMessage = document.getElementById('successMessage');
+    successMessage.textContent = "";
+    const hayError = !valid;
         if(!valid){
             event.preventDefault();
         }
+        if (hayError === false) {
+        alert("¡registrado correctamente!");
+
+
+
+        // Limpiar el formulario
+        document.getElementById("username").value = "";
+        document.getElementById("lastname").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("confirmPassword").value = "";
+        document.getElementById("email").value = "";
+    }
+    
 
     });
 
